@@ -19,3 +19,5 @@ spec:
         image: saikrishnareddy9100/go-web-app:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+      -  name: demo
